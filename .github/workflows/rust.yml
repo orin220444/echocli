@@ -23,4 +23,4 @@ jobs:
         name: 
           echocli
         path:
-          ${{ env.REPO_NAME }}/target/debug
+          ${{ env.REPO_NAME }}\target\debug
