@@ -4,19 +4,19 @@ use std::io;
 fn main() {
     loop {
         println!("type something");
-        let mut usertypings = String::new();
+        let mut user_typings = String::new();
         io::stdin()
-            .read_line(&mut usertypings)
+            .read_line(&mut user_typings)
             .expect("Failed to read line");
-        let usertypings = usertypings.trim_end();
-        if usertypings == "quit" || usertypings == "exit" {
+        let user_typings = user_typings.trim_end();
+        if user_typings == "quit" || user_typings == "exit" {
             println!("exiting...");
             break;
-        } else if usertypings == "game" {
+        } else if user_typings == "game" {
             game();
             break;
         } else {
-            println!("you typed: {}", &usertypings);
+            println!("you typed: {}", &user_typings);
         }
     }
 }
