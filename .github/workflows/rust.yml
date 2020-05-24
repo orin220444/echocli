@@ -21,6 +21,6 @@ jobs:
       uses: actions/download-artifact@v1.0.0
       with:
         name: 
-          echocli
+          echocli.exe
         path:
           ${{ env.REPO_NAME }}\target\debug
